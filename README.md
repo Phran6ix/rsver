@@ -1,5 +1,5 @@
 
- DNS RESOLVER written in Rust. Inspired by Jon Cricket Coding [Challenges](https://codingchallenges.fyi/challenges/challenge-dns-resolver) 
+ DNS RESOLVER written in Rust. Inspired by Jon Crickett Coding [Challenges](https://codingchallenges.fyi/challenges/challenge-dns-resolver) 
 
 
 ## USAGE
