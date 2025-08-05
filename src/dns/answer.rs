@@ -28,9 +28,7 @@ pub fn get_answer(response_bytes: &[u8]) -> Result<String, io::Error> {
 
     // if rcode_byte != 0 {
     match rcode_byte {
-        0 => {
-            println!("QuestionQuery is valid. ")
-        }
+        0 => (),
         1 => {
             return Err(io::Error::new(
                 io::ErrorKind::InvalidData,

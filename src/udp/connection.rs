@@ -30,11 +30,10 @@ pub fn send_msg(socket: &UdpSocket, msg: &[u8]) -> Result<(), io::Error> {
 
 pub fn receive_msg(socket: &UdpSocket) -> Result<[u8; 512], io::Error> {
     let mut buf = [0; 512];
-    println!("BOUT TO LISTEN TO MSG");
     // let (_, src_address) = socket.recv_from(&mut buf).expect("No message received");
 
     match socket.recv(&mut buf) {
-        Ok(received) => println!("This is the recieved bytes {:?}", &buf[..received]),
+        Ok(received) => println!("This is the recieved bytes "),
         Err(e) => println!("An error occured while trying to receive => {:?}", e),
     }
     // println!("RECIEVED DATAGRAM FROM {src_address}");
